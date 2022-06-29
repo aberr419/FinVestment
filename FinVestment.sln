@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.API", "User.API\User.API.csproj", "{C52A850C-6747-40E9-B494-7AB640878A16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "src\services\Identity\Identity.API\Identity.API.csproj", "{EA1ABAB0-127B-430D-B3CD-9863718AEB29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97191251-CCC7-4EF9-BACF-0528B4519832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{62EF8A93-1D9E-4C72-8073-720CDDD8CDE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{10AFF512-4D09-4A6B-B4E3-710AF22842C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E3049DD8-35F1-481F-92CD-2BF996D901A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinVestmentUI", "src\Presentation\FinVestmentUI\FinVestmentUI.csproj", "{0751E179-3B75-4495-BBF7-AF7C2CEAAA02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +21,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C52A850C-6747-40E9-B494-7AB640878A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C52A850C-6747-40E9-B494-7AB640878A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C52A850C-6747-40E9-B494-7AB640878A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C52A850C-6747-40E9-B494-7AB640878A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1ABAB0-127B-430D-B3CD-9863718AEB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1ABAB0-127B-430D-B3CD-9863718AEB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1ABAB0-127B-430D-B3CD-9863718AEB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1ABAB0-127B-430D-B3CD-9863718AEB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0751E179-3B75-4495-BBF7-AF7C2CEAAA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0751E179-3B75-4495-BBF7-AF7C2CEAAA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0751E179-3B75-4495-BBF7-AF7C2CEAAA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0751E179-3B75-4495-BBF7-AF7C2CEAAA02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA1ABAB0-127B-430D-B3CD-9863718AEB29} = {10AFF512-4D09-4A6B-B4E3-710AF22842C2}
+		{62EF8A93-1D9E-4C72-8073-720CDDD8CDE9} = {97191251-CCC7-4EF9-BACF-0528B4519832}
+		{10AFF512-4D09-4A6B-B4E3-710AF22842C2} = {62EF8A93-1D9E-4C72-8073-720CDDD8CDE9}
+		{E3049DD8-35F1-481F-92CD-2BF996D901A5} = {97191251-CCC7-4EF9-BACF-0528B4519832}
+		{0751E179-3B75-4495-BBF7-AF7C2CEAAA02} = {E3049DD8-35F1-481F-92CD-2BF996D901A5}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {019EDE1B-5927-4C17-9544-D11A8C6764DA}
+		SolutionGuid = {3CA74C83-EA6E-4805-8E4B-1F1AFF935CD8}
 	EndGlobalSection
 EndGlobal
