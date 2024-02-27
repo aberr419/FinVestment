@@ -1,2 +1,2 @@
 # FinVestment
-Web app to aid in investing
+Dummy app to practice configuring webpack in a .Net MVC application
